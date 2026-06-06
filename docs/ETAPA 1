@@ -1,0 +1,232 @@
+# 1 APRESENTAÇÃO DA EMPRESA, MERCADO, PROCESSOS E SISTEMAS
+
+## 1.1 Apresentação da Empresa
+
+A empresa selecionada para este estudo de caso é uma empresa de Representação Comercial voltada para a venda de produtos químicos para tratamento de água de piscinas.
+
+A empresa opera no modelo B2B (Business to Business), intermediando a venda entre a fábrica e as revendas (lojas de piscinas, materiais de construção, produtos de limpeza e distribuidoras).
+
+A empresa é uma organização de pequeno porte sediada em Belo Horizonte, Minas Gerais, e possui 3 colaboradores, sendo constituída pelo proprietário e dois vendedores.
+
+Com mais de trinta e cinco anos de atuação no mercado, a empresa possui conhecimento sobre grande parte das lojas que trabalham com produtos de piscinas no estado de Minas Gerais.
+
+O processo da empresa envolve a negociação de vendas com os clientes, bem como a realização de visitas recorrentes. Nessas visitas são conduzidos treinamentos sobre os produtos, avaliadas as necessidades das lojas, sugeridas possíveis melhorias, verificado o nível de estoque e analisadas as condições do mercado.
+
+Além disso, essas interações contribuem para o fortalecimento e estreitamento da parceria com os clientes.
+
+A empresa possui um SaaS (Software as a Service) de terceiros para fazer o controle das vendas, contratado em julho de 2014. A partir desta data, todo o fluxo de vendas da empresa vem sendo armazenado na base de dados do software.
+
+### Justificativa da Escolha
+
+Uma empresa do ramo da Representação Comercial é uma escolha estratégica para o projeto, tendo em vista a possibilidade de implementar soluções assertivas e tecnológicas voltadas à otimização e automação do modelo de negócio, trazendo vantagens competitivas para a empresa, como o maior controle dos dados de vendas e fluxos operacionais internos.
+
+---
+
+## 1.2 Análise de Mercado
+
+Atualmente o Brasil é o segundo maior mercado de piscinas do mundo, ficando atrás somente dos Estados Unidos.
+
+Assim, o mercado de piscinas brasileiro demanda alta competência e desperta atenção dos muitos lojistas.
+
+O mercado de distribuição e representação de produtos químicos para piscinas e limpeza no Brasil é fragmentado, com a presença de:
+
+- Grandes distribuidoras nacionais;
+- Representantes regionais de médio porte;
+- Pequenos representantes comerciais;
+- Plataformas de e-commerce especializadas.
+
+A competição ocorre principalmente por:
+
+- Preço;
+- Prazo de entrega;
+- Disponibilidade de estoque;
+- Suporte técnico.
+
+Além da concorrência entre lojas que vendem o mesmo produto, existe também concorrência entre representantes da mesma localidade que trabalham com outras marcas.
+
+O diferencial competitivo reside em:
+
+- Qualidade dos produtos;
+- Proximidade com o cliente;
+- Agilidade de atendimento;
+- Suporte técnico consultivo.
+
+Foi realizada uma análise SWOT para avaliar o ambiente interno e externo da organização.
+
+<!-- ILUSTRAÇÃO 1 -->
+![Ilustração 1 - Matriz SWOT](images/ilustracao-01-matriz-swot.png)
+
+**Ilustração 1 – Matriz SWOT**  
+Fonte: Elaborada pelos autores (2026).
+
+---
+
+## 1.3 Análise de Processos e Sistemas
+
+O desenvolvimento deste projeto permitirá a transição de uma gestão puramente descritiva para uma cultura orientada a dados, possibilitando previsões de vendas mais acuradas e a atualização de processos que atualmente são manuais.
+
+### 1.3.1 Mapeamento de Processos (BPMN)
+
+#### Processo de Vendas
+
+O processo atual do fluxo de vendas é composto pelas seguintes etapas:
+
+1. Contato da empresa ao cliente;
+2. Recebimento do orçamento;
+3. Consulta de tabela;
+4. Registro do orçamento;
+5. Confirmação do pedido pelo cliente;
+6. Envio à fábrica;
+7. Acompanhamento do pós-venda.
+
+<!-- ILUSTRAÇÃO 2 -->
+![Ilustração 2 - Processo de Vendas](images/ilustracao-02-processo-vendas.png)
+
+**Ilustração 2 – Processo de vendas**  
+Fonte: Elaborada pelos autores (2026).
+
+#### Processo de Previsão de Vendas Futuras
+
+Etapas:
+
+1. Extração de vendas do último ano no Mercos;
+2. Tratamento do arquivo;
+3. Atualização da tabela de vendas;
+4. Alimentação da planilha de previsão.
+
+<!-- ILUSTRAÇÃO 3 -->
+![Ilustração 3 - Processo de Previsão de Vendas](images/ilustracao-03-previsao-vendas.png)
+
+**Ilustração 3 – Processo de previsão de vendas futuras**  
+Fonte: Elaborada pelos autores (2026).
+
+#### Processo de Registro e Previsão de Visitas
+
+Etapas:
+
+1. Planejamento das rotas de visitas do ano;
+2. Definição da rota de visita da semana;
+3. Realização das visitas;
+4. Registro das visitas.
+
+<!-- ILUSTRAÇÃO 4 -->
+![Ilustração 4 - Processo de Registro de Visitas](images/ilustracao-04-visitas.png)
+
+**Ilustração 4 – Processo de registro e previsão de visitas**  
+Fonte: Elaborada pelos autores (2026).
+
+---
+
+### 1.3.2 Sistemas de Informação e Maturidade
+
+A empresa utiliza o sistema ERP Mercos ERP, uma plataforma SaaS voltada para representantes comerciais.
+
+Principais funcionalidades:
+
+- Gestão de clientes;
+- Gestão de pedidos;
+- Emissão de orçamentos;
+- Relatórios comerciais;
+- Histórico de vendas.
+
+Principais relatórios:
+
+#### Carteira de Clientes
+
+- Nome;
+- CNPJ;
+- Cidade;
+- Estado;
+- Informações complementares.
+
+#### Relatório de Vendas
+
+- Data da venda;
+- Loja compradora;
+- Valor vendido.
+
+#### Produtos por Pedido
+
+- Código do produto;
+- Nome do produto;
+- Quantidade;
+- Valor unitário;
+- Valor total.
+
+Apesar dessas funcionalidades, os recursos gerenciais voltados à análise estratégica e previsão de vendas ainda são limitados.
+
+Outro ponto relevante refere-se ao registro das visitas comerciais, atualmente armazenadas apenas em grupos de WhatsApp.
+
+---
+
+### 1.3.3 Informações Técnicas
+
+| Item | Descrição |
+|--------|--------|
+| ERP Utilizado | Mercos ERP |
+| Tipo | SaaS |
+| Armazenamento Principal | Banco de dados em nuvem |
+| Armazenamento Complementar | Computadores locais |
+
+---
+
+### 1.3.4 Gargalos Operacionais
+
+Principais gargalos identificados:
+
+- Atualização manual das tabelas de análise;
+- Ausência de sistema preditivo;
+- Dependência de planilhas eletrônicas;
+- Falta de antecipação de demandas sazonais.
+
+Exemplo:
+
+- Aumento da procura por aquecedores durante o inverno.
+
+---
+
+### 1.3.5 Potencial de Melhoria
+
+Existe oportunidade de melhoria através da utilização de bibliotecas de manipulação de dados e modelos estatísticos para:
+
+- Automatização da análise de vendas;
+- Cálculo de metas;
+- Previsão anual de vendas;
+- Estruturação do registro de visitas comerciais.
+
+#### Benefícios Esperados
+
+##### Gestão Comercial
+
+- Medição da eficiência comercial;
+- Gestão de clientes inativos;
+- Histórico de relacionamento.
+
+##### Logística
+
+- Roteirização de visitas;
+- Agrupamento geográfico de clientes;
+- Redução de custos de deslocamento.
+
+##### Inteligência de Negócio
+
+- Centralização das informações;
+- Análise preditiva;
+- Planejamento orientado por dados.
+
+### Nível de Maturidade Digital
+
+A empresa apresenta maturidade digital intermediária.
+
+Pontos positivos:
+
+- ERP implantado;
+- Histórico de vendas estruturado;
+- Processos informatizados.
+
+Oportunidades de evolução:
+
+- Business Intelligence;
+- Análise preditiva;
+- Planejamento comercial;
+- Gestão estruturada de visitas.
